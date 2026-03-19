@@ -28,6 +28,7 @@ jobs:
         with:
           scan-type: 'fs'
           format: 'table'
+          exit-code: 1  
 
       # 5. Build Docker Image
       - name: Build Docker Image
@@ -39,6 +40,7 @@ jobs:
         with:
           image-ref: 'secure-app'
           format: 'table'
+          exit-code: 1
 
       # 7. Login to Docker Hub
       - name: Login to Docker Hub
